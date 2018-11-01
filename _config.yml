@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hello nope.me
-subtitle: our goal is no pe
+title: Hello geekgo.me
+subtitle: I like golang , Follow me 
 description:  this site is used to share some technique knowledge 
 author: Frank 
 language: zh-CN
@@ -64,12 +64,24 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 #theme: landscape
-theme: jacman
+#theme: jacman
+theme: yilia
+avatar: /upload/image/avatar.png
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/frank0718/frank0718.github.io.git
+  repo: https://frank0718@github.com/frank0718/frank0718.github.io.git
   branch: master
-  message: hexo deploy
+  message: hexo deploy new
+
+# RSS订阅支持
+plugin:
+- hexo-generator-feed
+
+# Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
