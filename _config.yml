@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hello geekgo.me
-subtitle: I like golang , Follow me 
+title: Hello World 
+subtitle: Keep Fit And Be Healthy
 description:  this site is used to share some technique knowledge 
 author: Frank 
 language: zh-CN
@@ -26,6 +26,11 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+menu:
+  home: /
+  about: /about
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -65,8 +70,11 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 #theme: landscape
 #theme: jacman
-theme: yilia
+theme: next
 avatar: /upload/image/avatar.png
+
+# available: normal | night | night eighties | night blue | night bright
+highlight_theme: night eighties
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -75,6 +83,10 @@ deploy:
   repo: https://frank0718@github.com/frank0718/frank0718.github.io.git
   branch: master
   message: hexo deploy new
+
+# duoshuo:
+#   enable: true
+#   shortname: your-duoshuo-shortname
 
 # RSS订阅支持
 plugin:
@@ -85,3 +97,21 @@ feed:
 type: atom
 path: atom.xml
 limit: 20
+
+# livereload:
+#   port: 35729
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
+  instanceName: "uniqueString"
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+  # Local search
+local_search:
+  enable: true

@@ -11,6 +11,10 @@ description:
 ### 实现增量同步
 ### 后台运行 
 
+    
+![](/upload/image/sync.png)
+
+
 ```
 #!/bin/bash
 
