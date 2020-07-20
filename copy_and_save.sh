@@ -3,4 +3,4 @@
 
 cp -r ../hexo/source/* ./source/
 
-cp -r ../hexo/scaffolds/* ./source/
+cp -r ../hexo/scaffolds/* ./scaffolds/
